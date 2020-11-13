@@ -13,7 +13,12 @@ numButtons.forEach(item => {
     })
 })
 
+clearButton.addEventListener('click', function () {
+    document.querySelector('#output').innerHTML = ''
+  })
+
 //math.evaluate() for equals
+
 
 // document.getElementById('add').addEventListener('click', function (event) {
 //     console.log('it worked')
@@ -27,7 +32,3 @@ numButtons.forEach(item => {
 //     })
 // })
 
-
-//   document.querySelector('#clear').addEventListener('click', function () {
-//     document.querySelector('#output').innerHTML = ''
-//   })
