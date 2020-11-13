@@ -21,8 +21,8 @@ numButtons.forEach(item => {
 
 // document.querySelectorAll('.button').forEach(item => {
 //     item.addEventListener('click', event => {
-//         console.log(`other ${item.innerHTML} cool`) 
-//         console.log('another ' + item.innerHTML + ' hot') 
+//         console.log(`I get ${item.innerHTML} by with`) 
+//         console.log('alittle help ' + item.innerHTML + ' from my friends') 
 //         outputButton.innerHTML += item.innerHTML
 //     })
 // })
