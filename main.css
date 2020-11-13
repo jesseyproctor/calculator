@@ -13,9 +13,12 @@
 
 .calc-structure > button {
     color: white;
-    background-color: yellowgreen;
+    background-color: rgb(109, 160, 7);
     border-color: white;
 
+}
+.calc-structure > button:hover {
+    background-color: rgba(153, 205, 50, 0.685);
 }
 
 #output {

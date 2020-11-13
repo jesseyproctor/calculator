@@ -6,3 +6,28 @@ const subtractButton = document.querySelector('#subtract')
 const decimalButton = document.querySelector('#decimal')
 const equalsButton = document.querySelector('#equals')
 const addButton = document.querySelector('#add')
+
+numButtons.forEach(item => {
+    item.addEventListener('click', event => { 
+        outputButton.innerHTML += item.innerHTML
+    })
+})
+
+//math.evaluate() for equals
+
+// document.getElementById('add').addEventListener('click', function (event) {
+//     console.log('it worked')
+// })
+
+// document.querySelectorAll('.button').forEach(item => {
+//     item.addEventListener('click', event => {
+//         console.log(`other ${item.innerHTML} cool`) 
+//         console.log('another ' + item.innerHTML + ' hot') 
+//         outputButton.innerHTML += item.innerHTML
+//     })
+// })
+
+
+//   document.querySelector('#clear').addEventListener('click', function () {
+//     document.querySelector('#output').innerHTML = ''
+//   })
