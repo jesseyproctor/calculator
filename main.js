@@ -6,6 +6,7 @@ const subtractButton = document.querySelector('#subtract')
 const decimalButton = document.querySelector('#decimal')
 const equalsButton = document.querySelector('#equals')
 const addButton = document.querySelector('#add')
+const divideButton = document.querySelector('#divide')
 
 numButtons.forEach(item => {
     item.addEventListener('click', event => { 

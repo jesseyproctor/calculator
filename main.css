@@ -11,7 +11,7 @@ h1 {
 body {
     padding: 0;
     margin: 0;
-    background: linear-gradient(to right, rgb(141, 6, 18), white)
+    background: linear-gradient(to right, rgb(62, 33, 224), white)
 }
 
 .calc-structure {
@@ -23,7 +23,7 @@ body {
     grid-column-gap: 1px;
     place-content: center;
     /* border: solid black 2px; */
-    min-height: 100vh;
+    /* min-height: 100vh; */
     
 }
 
@@ -43,6 +43,10 @@ body {
     display: flex;
     align-items: flex-end;
     flex-direction: column;
-    padding: 20px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.699);
+    color: black;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
