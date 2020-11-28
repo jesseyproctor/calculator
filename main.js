@@ -1,6 +1,6 @@
 const numButtons = document.querySelectorAll('.button')
 const clearButton = document.querySelector('#clear')
-const outputButton = document.querySelector('#output')
+const outputBox = document.querySelector('#output')
 const multiplyButton = document.querySelector('#multiply')
 const subtractButton = document.querySelector('#subtract')
 const decimalButton = document.querySelector('#decimal')
@@ -10,26 +10,37 @@ const divideButton = document.querySelector('#divide')
 
 numButtons.forEach(item => {
     item.addEventListener('click', event => { 
-        outputButton.innerHTML += item.innerHTML
+        outputBox.innerHTML += item.innerHTML
     })
 })
 
 clearButton.addEventListener('click', function () {
     document.querySelector('#output').innerHTML = ''
-  })
+})
 
-//math.evaluate() for equals
+equalsButton.addEventListener('click', function () {
+    console.log(eval(outputBox.innerHTML))
+    outputBox.innerHTML = eval(outputBox.innerHTML)
 
+})
 
-// document.getElementById('add').addEventListener('click', function (event) {
-//     console.log('it worked')
-// })
+addButton.addEventListener('click', function () {
+    console.log('add')
+    outputBox.innerHTML += addButton.innerHTML 
+})
 
-// document.querySelectorAll('.button').forEach(item => {
-//     item.addEventListener('click', event => {
-//         console.log(`I get ${item.innerHTML} by with`) 
-//         console.log('alittle help ' + item.innerHTML + ' from my friends') 
-//         outputButton.innerHTML += item.innerHTML
-//     })
-// })
+subtractButton.addEventListener('click', function () {
+    console.log('subtract')
+    outputBox.innerHTML += subtractButton.innerHTML 
+})
+
+multiplyButton.addEventListener('click', function () {
+    console.log('multiply')
+    outputBox.innerHTML += multiplyButton.innerHTML 
+})
+
+divideButton.addEventListener('click', function () {
+    console.log('divide')
+    outputBox.innerHTML += divideButton.innerHTML 
+})
 
